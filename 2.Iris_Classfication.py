@@ -34,7 +34,7 @@ history=model.fit(X, yy, epochs=90, batch_size=5)
 
 import numpy as np
 xx=[[6.7,3.3,5.7,2.5]]
-px=model.predict(xx)
+px=model.predict(xx) #모델에 적용
 pre=np.argmax(px) #argmax:집합 X 안에서 최대값의 위치
 print(pre)
 Y_col=np.unique(y) #열 이름 중복 제거
